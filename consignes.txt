@@ -1,0 +1,49 @@
+page index.html
+on voit la possibilité de se connecter (dans la page index elle meme)
+
+formulaire de connection
+(penser a 
+label
+required
+name
+...
+)
+login
+mdp
+boutton se connecter => envoi vers une page bonjour.html
+
+
+pas encore inscrit
+qui nous envoi sur la page d'inscription.html
+
+
+inscription.html
+formulaire d'inscription (c'est pas rgpd friendly)
+genre
+nom
+prenom
+email
+telephone
+mdp
+verif mdp
+adresse
+un select (comment avez vous connu le site (avec 3 choix))
+un bouton radio (preference de communication (email - sms - je ne veux pas))
+un checkbox (j'ai lu j'ai tout compris et j'accepte)
+
+(tout les champs doivent etre obligatoires)
+
+Un bouton je m'inscris
+ça amene a une page de confirmation.html
+
+
+confirmation.html
+bienvenue, vous pouvez maintenant vous connecter
+(et ça pointe vers href index.html)
+
+
+bonjour.html
+Bienvenue
+
+
+

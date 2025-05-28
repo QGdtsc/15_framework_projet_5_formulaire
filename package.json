@@ -1,0 +1,23 @@
+{
+  "name": "15_framework_projet_5_formulaire",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QGdtsc/15_framework_projet_5_formulaire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QGdtsc/15_framework_projet_5_formulaire/issues"
+  },
+  "homepage": "https://github.com/QGdtsc/15_framework_projet_5_formulaire#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}
