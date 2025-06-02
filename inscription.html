@@ -16,6 +16,39 @@
 <body>
 
 
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vintage Car Rental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Nos agences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Nos véhicules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--FIN DE NAVBAR -->
+
+
+
+
+
+
+
     <div class="d-flex justify-content-center align-items-center min-vh-100 bg-image">
         <!-- <div class="min-vh-100 bg-info"> -->
         <!-- div d-flex justify-content-center align-items-center  -->
@@ -25,43 +58,74 @@
         </div> -->
 
 
-        <div class="container row justify-content-center p-4 md-p-0 h_element_90">
 
 
 
 
 
-            <form action="bienvenue.html" class="col-12 col-lg-9 border border-3 border-danger bg_opacity_80"
-                novalidate>
+
+
+
+
+
+        <div class="container row justify-content-center p-4 md-p-0 ">
+            <!-- <div class="container row justify-content-center p-4 md-p-0 h_element_90"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <form action="bienvenue.html" class="col-12 col-lg-9 border border-3 border-danger bg_opacity_80">
+                <!-- novalidate> -->
                 <div class="mt-2">
                     <a href="index.html" class="text-black">Retour</a>
                 </div>
 
                 <a href="" class="btn"></a>
 
+
+
+
+
+
                 <div class="container col-11">
 
+
+                    <div class="row text-end">
+                        <p class="fs-6 m-0">* champs obligatoires</p>
+                    </div>
+                    <!-- NOM ET PRENOM -->
+
                     <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" name="nom" placeholder="Nom"
-                                aria-label="First name">
+                        <div class="col mt-3">
+                            <input type="text" class="form-control" name="nom" placeholder="Nom *"
+                                aria-label="First name" required>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" name="prenom" placeholder="Prénom"
-                                aria-label="Last name">
+                        <div class="col mt-3">
+                            <input type="text" class="form-control" name="prenom" placeholder="Prénom *"
+                                aria-label="Last name" required>
                         </div>
                     </div>
 
+                    <!-- ADRESSE -->
+
                     <div class="row">
-                        <div class="col-12 mt-2">
+                        <div class="col-12 mt-3">
                             <!-- <label for="inputAddress" class="form-label">Adresse</label> -->
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Adresse *" required>
                         </div>
-                        <div class="col-md-6 mt-2">
+                        <div class="col-md-6 mt-3">
                             <!-- <label for="inputCity" class="form-label">Ville</label> -->
-                            <input type="text" class="form-control" id="inputCity" placeholder="Ville">
+                            <input type="text" class="form-control" id="inputCity" placeholder="Ville *" required>
                         </div>
-                        <div class="col-md-6 mt-2">
+                        <div class="col-md-6 mt-3">
                             <!-- <label for="inputState" class="form-label">Pays</label> -->
                             <select id="inputState" class="form-select">
                                 <option selected>France</option>
@@ -75,70 +139,113 @@
                     </div>
 
 
-
-
+                    <!-- EMAIL -->
 
                     <div class="row">
-                        <div class="col-12 mt-2">
+                        <div class="col-12 mt-3">
 
 
                             <input type="email" class="form-control " id="inputEmail"
-                                placeholder="Adresse électronique">
+                                placeholder="Adresse électronique *">
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-6 mt-2">
-                                <input type="tel" class="form-control" id="inputTel"
-                                    placeholder="Téléphone (facultatif)">
-                            </div>
-                            <div class="col-6 mt-2">
-                                <div class="row">Préférence de communication</div>
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioDefault"
-                                            id="radioDefault1">
-                                        <label class="form-check-label" for="radioDefault1">
-                                            Je ne souhaite pas être contacté.
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioDefault"
-                                            id="radioDefault2">
-                                        <label class="form-check-label" for="radioDefault2">
-                                            Communication par Email.
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioDefault"
-                                            id="radioDefault3" disabled>
-                                        <label class="form-check-label" for="radioDefault3">
-                                            Communication par SMS.
-                                        </label>
-                                    </div>
+                    </div>
+
+
+                    <!-- MOT DE PASSE -->
+
+                    <div class="row">
+                        <div class="col-md-6 mt-3">
+                            <input type="password" class="form-control" id="inputmpd" placeholder="Mot de passe *">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="password" class="form-control" id="verifmpd"
+                                placeholder="Veuillez re-saisir votre mot de passe *">
+                        </div>
+                    </div>
+
+                    <!-- TELEPHONE -->
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 mt-3">
+                            <input type="tel" class="form-control" id="inputTel" placeholder="Téléphone (facultatif)">
+                        </div>
+                        <!-- </div> -->
+                        <!-- PREFERENCE DE COMMUNICATION -->
+                        <!-- <div class="row"> -->
+                        <div class="col-12 col-md-6 mt-3 px-3">
+                            <div class="row ms-0">Préférence de communication</div>
+                            <div class="row ms-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                    <label class="form-check-label" for="radioDefault1">
+                                        Je ne souhaite pas être contacté.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                                    <label class="form-check-label" for="radioDefault2">
+                                        Communication par Email.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3"
+                                        disabled>
+                                    <label class="form-check-label" for="radioDefault3">
+                                        Communication par SMS.
+                                    </label>
                                 </div>
                             </div>
+                        </div>
 
+                    </div>
+
+
+
+
+                    <script>
+                        document.getElementById("inputTel").addEventListener("input", function () {
+                            let telInput = this.value.trim();
+                            let smsRadio = document.getElementById("radioDefault3");
+
+                            if (telInput === "") {
+                                smsRadio.disabled = true;  // Désactive le bouton
+                                smsRadio.checked = false;  // Décocher le bouton si activé
+                            } else {
+                                smsRadio.disabled = false; // Active le bouton si un numéro est présent
+                            }
+                        });
+                    </script>
+
+
+
+
+                    <div class="row mt-5">
+                        <div class="col-12 mt-3">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    J'acceptes les conditions d'utilisation.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12  mt-2 mb-4">
+                            <button class="btn btn-light">Créer mon compte</button>
                         </div>
 
 
 
 
-                        <script>
-                            document.getElementById("inputTel").addEventListener("input", function () {
-                                let telInput = this.value.trim();
-                                let smsRadio = document.getElementById("radioDefault3");
 
-                                if (telInput === "") {
-                                    smsRadio.disabled = true;  // Désactive le bouton
-                                    smsRadio.checked = false;  // Décocher le bouton si activé
-                                } else {
-                                    smsRadio.disabled = false; // Active le bouton si un numéro est présent
-                                }
-                            });
-                        </script>
+                    </div>
 
-                        <!-- <script>
+
+
+
+                    <!-- <script>
                             document.getElementById("inputTel").addEventListener("input", function () {
                                 let telInput = this.value.trim();
                                 let smsRadio = document.getElementById("radioDefault3"); // Sélectionne le bouton radio SMS
@@ -146,7 +253,7 @@
                                 smsRadio.disabled = (telInput === ""); // Désactive si le champ téléphone est vide
                             });
                         </script> -->
-                        <!-- <script>
+                    <!-- <script>
                             document.getElementById("inputTel").addEventListener("input", function () {
                                 let telInput = this.value.trim();
                                 let radioButtons = document.querySelectorAll("input[name='radioDefault']");
@@ -161,7 +268,7 @@
 
 
 
-                        <!-- <div class="row align-items-center mt-2">
+                    <!-- <div class="row align-items-center mt-2">
                         <div class="col-md-6">
                             <label for="inputmdp" class="form-label m-0">Mot de passe</label>
                         </div>
@@ -177,47 +284,29 @@
                             <input type="password" class="form-control" id="inputmpd" placeholder="Mot de passe">
                         </div>
                     </div> -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="password" class="form-control mt-2" id="inputmpd"
-                                    placeholder="Mot de passe">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="password" class="form-control mt-2" id="verifmpd"
-                                    placeholder="Veuillez re-saisir votre mot de passe">
-                            </div>
-                        </div>
-                        <!-- <div class="row align-items-center mt-2">
+
+                    <!-- <div class="row align-items-center mt-2">
                         <div class="col-md-6">
                             <label for="inputmdp" class="form-label m-0">Veuillez re-saisir votre mot de passe.</label>
                         </div> -->
 
-                    </div>
-
-
                 </div>
-
-
-
-
-
-
-
-
-
-            </form>
-
-
-
 
 
         </div>
 
 
+        </form>
+
 
     </div>
 
 
+    <footer class="bg-light text-center py-3">
+        <p>© 2025 Vintage Car Rental. Tous droits réservés.</p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
